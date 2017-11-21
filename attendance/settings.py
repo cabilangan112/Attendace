@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'attendace.urls'
+ROOT_URLCONF = 'attendance.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'attendace.wsgi.application'
+WSGI_APPLICATION = 'attendance.wsgi.application'
 
 
 # Database

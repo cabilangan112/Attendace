@@ -37,6 +37,17 @@ class Department(models.Model):
 	def __str__(self):
 		return  self.Department
 		
+class Course(models.Model):
+	Course_name  = models.CharField(max_length=150)
+	Course_Discription  = models.CharField(max_length=250)
+	 
+	def get_absolute_url(self):
+		return reverse('Course-detail', args=[str(self.id)])
+		
+	def __str__(self):
+		return  self.Course_name
+		
+		
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
